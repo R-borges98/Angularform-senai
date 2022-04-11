@@ -1,0 +1,18 @@
+<form #userForm="ngForm" (ngSubmit)="onSubmit()" >
+
+    <div class="email-senha">
+
+      <div class="texto-email">   <label for="email"> Email: </label> </div> 
+        <input type="email" name="email" id="email" [(ngModel)]="userModel.email">
+    
+     <div class="texto-senha">   <label for="senha"> Senha: </label>  </div>  
+        <input type="password" id="senha" name="senha"  [(ngModel)] ="userModel.senha">
+    </div>
+    
+    <button type="submit">Enviar</button>
+
+
+
+
+
+</form>
