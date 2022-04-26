@@ -1,0 +1,37 @@
+.email-senha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgb(18, 34, 2);
+    width: 600px;
+    height: 500px;
+ }
+ .email-senha form{
+     display: flex;
+     width: 100%;
+     flex-direction: column;
+ }
+ .email-senha input{
+     margin-top: 90px;
+     padding: 10px;
+     width: 50%;
+     border: none;
+     border-radius: 20px;
+ }
+ .texto-email{
+    text-transform: uppercase;
+    margin: 2px;
+ }
+ .texto-senha{
+     text-transform: uppercase;
+     margin: 2px;
+ }
+ form [type="submit"]{
+     display: block;
+     background-color: rgb(85, 82, 82);
+     font-size: 20px;
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+

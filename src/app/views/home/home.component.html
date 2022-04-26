@@ -10,9 +10,210 @@
     </div>
     
     <button type="submit">Enviar</button>
-
-
-
-
-
 </form>
+
+
+
+
+<body>
+  <section>
+      <div class="texto">
+         <h4>Categorias em destaques</h4>
+      </div>
+  </section>
+
+  <header> 
+      <div class="container-grid posicionamento-header" >
+          <nav id="menu" class="menu">
+          <a href="">Menu</a> 
+          <a href="">Loja</a>
+          <a href="">Explorar</a>
+          <a href="">Jogos</a>
+          <a href="">Ofertas</a>
+          <a href="">Faça seu login</a> 
+      </nav>
+
+
+      </div>
+  </header>
+ 
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/banner1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/banner2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/banner3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+      <div class="secao-compras">
+          <a href="">Meus pedidos</a>
+          <a href="">Envios para todo o brasil</a>
+          <a href="">Parcele suas compras</a>
+          <a href="">Pagamentos com cartões, boleto e pix</a>
+          <a href="">Devoluções</a>
+      </div>
+      
+      
+       <!---- <div class="banner"> 
+      <div class="container-grid  posicionamento-header" >
+          <div class="botao">
+          <a href="" class="texto">Selecione seu endereço</a>
+      </div> 
+
+      <section>
+          <div class="posicao">
+              <a href="">novidades</a>
+          </div>
+      </section>-->
+      
+
+      <!----<div class="carrossel">
+          <div class="slides">
+          <input type="radio" name="radio" id="slide1" checked>
+          <input type="radio" name="radio" id="slide2">
+          <input type="radio" name="radio" id="slide3">
+
+          <div class="slide s1">
+              <img src="src/img/imagem1.jpg" alt="acessórios para gamer">
+          </div>
+          <div class="slide">
+              <img src="src/img/imagem2.jpg" alt="controle gamer">
+          </div>
+          <div class="slide">
+              <img src="src/img/imagem3.jpg" alt="controles para jogos">
+          </div>
+          </div>
+          <div class="navigation">
+              <label class="bar" for="slide1"></label>
+              <label class="bar" for="slide2"></label>
+              <label class="bar" for="slide3"></label>
+          </div>
+      </div>-->
+
+    <!----  <div>
+          <p class="anima">
+              Olá! Aqui você encontra tudo o que precisa para os seus jogos!!!
+          </p>
+      </div>-->
+      
+
+      <div class="anima">
+          <h2>Confira aqui as melhores ofertas!</h2>
+      </div>
+
+      <div class="caixinha-animada">
+          <h2>Atacado Games</h2>
+      </div>
+
+
+      <section class="secao-acessorios">
+          <div class="container">
+              <div class="content">
+                  <div *ngFor="let produtos of listaProdutos"    class="card">
+                      <img [src]= produto.imagem alt="Fones de ouvidos-Headset">
+                                               <h3>{{produto.titulo}}</h3>
+                                         <p>{{produto.descricao}}</p>
+                                   </div>
+                       <div class="card">
+                       <img src="assets/Controle trust yula -1.jpg" alt="Controle trust yula">
+                                   <h3>Controle Gamer Trust GXT 540C</h3>
+                                    <p>R$156,76 R$181,70
+                                      em até 5x de R$ 31,36 sem juros.</p>
+                       </div>   
+                       <div class="card">
+                          <img src="assets/controle-dazz-storm-2.jpg" alt="Controle dazz storm">
+                                                  <h3>Controle Storm Xbox360 Dazz</h3>
+                                                          <p>R$146,99
+                                                              em até 4x de R$ 36,77 sem juros.</p>
+                      </div>    
+                      <div class="card">
+                          <img src="assets/fone5.jpg" alt="Fones de ouvido-Headphone">
+                                                   <h3>Headphone Gamer</h3>
+                                                   <p>R$170,43
+                                              em até 5x de R$ 34,11 sem juros.</p>
+                            </div>
+                      <div class="card">
+                          <img src="assets/controle-de-simulacao-saitek-logitech-com-manete-3.jpg" alt="Controle de simulaçaõ saitek">
+                                              <h3>Controlador de Simulação.</h3>
+                                                          <p>R$1.315,00 R$1.499,00
+                                                          em até 10x de R$ 131,50 sem juros.</p>
+                             </div>
+                      <div class="card">
+                          <img src="assets/Pedais de leme com freio de simulação4.jpg" alt="Pedais de leme com freio de simulação">
+                                              <h3>Pedais de leme de voo logitech</h3>
+                                                       <p>R$1.766,67
+                                                          em até 10x de R$ 176,73 sem juros</p>
+                      </div>
+                      <div class="card">
+                          <img src="assets/Volante gamer com marcha e padal-multilaser.jpg" alt="Volante gamer com marcha e pedal-Multilaser">
+                                          <h3>Volante gamer Multilaser</h3>
+                                                   <p>R$429,90 R$447,60
+                                                      à vista ou em até 10x de R$ 44,76 sem juros</p>
+                      </div>
+                      <div class="card">
+                          <img src="assets/Volante gamer.jpg" alt="Volante logitech">
+                                      <h3>Volante Logitech G920 </h3>
+                                      <p>R$1.804,91 R$1.999,90
+                                          à vista ou em até 10x de R$ 189,90 sem juros</p>
+                      </div>
+                  </div>
+              
+              </div>
+      </section>
+      
+      <footer>
+
+          <div class="rodape container">
+              <div class="links-footer">
+              <div class="links">
+                  <h2>Links Úteis</h2>
+                  <ul>
+                      <li><a href="#"></a>Conheça-nos</li>
+                      <li><a href="#"></a>Frete e prazo de entrega</li>
+                      <li><a href="#"></a>Central de ajuda</li>
+                      <li><a href="#"></a>Contato</li>
+                  </ul>
+                </div>
+                  <div class="links">
+                      <h2>Mais informações</h2>
+                      <ul>
+                          <li><a href="#"></a>Tire suas dúvidas</li>
+                          <li><a href="#"></a>Termos de garantias</li>
+                          <li><a href="#"></a>Trocas e devoluções</li>
+                          <li><a href="#"></a>Cadastro</li>
+                      </ul>
+                  </div>
+              </div>
+              <img class="logo-rodape"  src="assets/logo_atacado games preto.png" alt="Logo - Atacado games">
+              <div class="cadastro">
+                  <h2>Faça seu cadastro e fique sempre por dentro das novidades.</h2>
+                  <form action="">
+                      <input id="campo-email"  type="email" placeholder="E-mail" required> 
+                      <button onclick="enviaremail()" >Cadastrar</button>
+                  </form>
+                  <div class="siga-nos">
+                     <div class="siga-nos-em">  <h2>Siga-nos em:</h2>     </div>
+                      <a href=""><img src="assets/instagram-.png" alt="instagram"></a>
+                      <a href=""><img src="assets/facebook.png" alt="facebook"></a>
+                      <a href=""><img src="assets/youtube.png" alt="youtube"></a>
+                  </div>
+              </div>
+            </div>
+      </footer>
+
+</body>
+

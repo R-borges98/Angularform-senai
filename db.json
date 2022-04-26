@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "email": "raquelborges@gmail.com",
+      "password": "Sol1998",
+      "nome": "Raquel",
+      "id": 1
+    },
+    {
+      "email": "Miguel@email.com",
+      "password": "$2a$10$f.fbITApDrgyNhDvElMD0eUIPCqqvMtZNgsLmOBeBEN2CDmimtQw2",
+      "nome": "Miguel",
+      "id": 2
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "imagem": "assets/img/Fone1.jpg",
+      "titulo": "Fones de ouvido",
+      "descricao": "Headset gamer,R$364,90 em até 10x de R$36,49 sem juros"
+    },
+    {
+      "id": 2,
+      "imagem": "assets/img/Controle2.jpg",
+      "titulo": "Fones de ouvido",
+      "descricao": "Headset gamer,R$364,90 em até 10x de R$36,49 sem juros"
+    },
+    {
+      "id": 3,
+      "imagem": "assets/img/controle3.jpg",
+      "titulo": "Fones de ouvido",
+      "descricao": "Headset gamer,R$364,90 em até 10x de R$36,49 sem juros"
+    },
+    {
+      "id": 4,
+      "imagem": "assets/img/fone4.jpg",
+      "titulo": "Fones de ouvido",
+      "descricao": "Headset gamer,R$364,90 em até 10x de R$36,49 sem juros"
+    },
+    {
+      "id": 5,
+      "imagem": "assets/img/controle5.jpg",
+      "titulo": "Fones de ouvido",
+      "descricao": "Headset gamer,R$364,90 em até 10x de R$36,49 sem juros"
+    },
+    {
+      "id": 6,
+      "imagem": "assets/img/pedais6.jpg",
+      "titulo": "Fones de ouvido",
+      "descricao": "Headset gamer,R$364,90 em até 10x de R$36,49 sem juros"
+    },
+    {
+      "id": 7,
+      "imagem": "assets/img/volante7.jpg",
+      "titulo": "Fones de ouvido",
+      "descricao": "Headset gamer,R$364,90 em até 10x de R$36,49 sem juros"
+    },
+    {
+      "imagem": "assets/img/volante8.jpg",
+      "titulo": "Fones de ouvido",
+      "descricao": "Volante gamer, R$429,90 R$447,60 à vista ou em até 10x de R$44,76 sem juros",
+      "id": 8
+    }
+  ]
+}
