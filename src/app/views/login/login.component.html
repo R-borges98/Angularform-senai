@@ -1,18 +1,19 @@
-<main>
-  <form #loginForm="ngForm" (ngSubmit)="onSubmit()" >
+<main >
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
 
-    <div class="email-senha">
+      <div class="campo-label">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Ex.: email@email.com" [(ngModel)]="loginModel.email">
+      </div>
 
-      <div class="texto-email">   <label for="email"> Email: </label> </div> 
-        <input type="email" name="email" id="email" [(ngModel)]="loginModel.email">
-    
-     <div class="texto-senha">   <label for="senha"> Senha: </label>  </div>  
-        <input type="password" id="senha" name="senha"  [(ngModel)] ="loginModel.senha">
-    </div>
-    
-    <button type="submit">Enviar</button>
+      <div class="campo-label">
+          <label for="senha">Senha</label>
+          <input type="password" name="password" id="senha" placeholder="Sua senha aqui..." [(ngModel)]="loginModel.password">
+      </div>
 
-    <p> id="mensagem" *ngIf=" mensagem !=''">{{mensagem}}</p>
+      <input id="botao-enviar" type="submit" value="Fazer Login">
 
-</form>
+  </form>
+  <p id="mensagem" *ngIf=" mensagem != '' "> {{ mensagem }} </p>
+  
 </main>

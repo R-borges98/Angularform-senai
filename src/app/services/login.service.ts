@@ -13,6 +13,9 @@ export class LoginService {
   url = "http://localhost:3000/login"
 
   
+  // headers: 'Content-Type': 'application/json'
+  // observe: "response"
+  
   login(user: User): Observable<any>{
     return this.httpClient.post(this.url, JSON.stringify(user),{
       headers: new HttpHeaders({ 'content-Type' : 'application/json'}),
