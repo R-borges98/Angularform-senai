@@ -11,7 +11,7 @@ import { LoginService } from 'src/app/services/login.service';
 })
 export class LoginComponent implements OnInit {
 
-    formLogin: FormGroup;
+    formLogin: FormGroup 
 
   constructor(private loginService: LoginService, private  router: Router, private formBuilder: FormBuilder) { 
 
@@ -26,14 +26,14 @@ export class LoginComponent implements OnInit {
   }
 
 
-  loginModel = new User();
+  userModel = new User();
 
   mensagem = ""
 
   usuarioLogado = ""
 
   onSubmit() {
-    console.log(this.loginModel)
+    console.log(this.userModel)
 
     let erroEncontrado = 0;
 
@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
     listaPalavras.forEach(palavra => {
       console.log("palavra atual:", palavra)
       
-      if(this.loginModel.email.toLowerCase().includes(palavra)) {
+      if(this.userModel.email.toLowerCase().includes(palavra)) {
         console.log("Palavra encontrada:", palavra)
         this.mensagem = "Dados inválidos: " + palavra;
 
@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
     })
 
     if (erroEncontrado == 0) {
-      this.loginService.login(this.loginModel).subscribe( (response) => {
+      this.loginService.login(this.userModel).subscribe( (response) => {
         this.usuarioLogado = response.body.user.nome
         // console.log(response)
         console.log(this.usuarioLogado)
